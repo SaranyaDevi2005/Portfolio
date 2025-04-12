@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saranya Devi S - Portfolio</title>
+  
+  <!-- Tailwind CSS from CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            },
+            secondary: {
+              50: '#f8fafc',
+              100: '#f1f5f9',
+              200: '#e2e8f0',
+              300: '#cbd5e1',
+              400: '#94a3b8',
+              500: '#64748b',
+              600: '#475569',
+              700: '#334155',
+              800: '#1e293b',
+              900: '#0f172a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-secondary-50 font-sans text-secondary-700">
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 z-50 w-full bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="#about" class="text-primary-500 font-bold text-xl">Saranya Devi S</a>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-center space-x-4">
+            <a href="#about" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-primary-500 font-semibold transition duration-300">About</a>
+            <a href="#education" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-secondary-700 hover:text-primary-500 transition duration-300">Education</a>
+            <a href="#skills" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-secondary-700 hover:text-primary-500 transition duration-300">Skills</a>
+            <a href="#projects" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-secondary-700 hover:text-primary-500 transition duration-300">Projects</a>
+            <a href="#achievements" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-secondary-700 hover:text-primary-500 transition duration-300">Achievements</a>
+            <a href="#contact" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-secondary-700 hover:text-primary-500 transition duration-300">Contact</a>
+          </div>
+        </div>
+        <div class="-mr-2 flex md:hidden">
+          <button 
+            id="mobile-menu-button"
+            type="button" 
+            class="inline-flex items-center justify-center p-2 rounded-md text-secondary-400 hover:text-secondary-500 hover:bg-secondary-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500" 
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <i class="fas fa-bars w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-primary-500 font-semibold">About</a>
+        <a href="#education" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-secondary-700 hover:text-primary-500 hover:bg-secondary-50">Education</a>
+        <a href="#skills" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-secondary-700 hover:text-primary-500 hover:bg-secondary-50">Skills</a>
+        <a href="#projects" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-secondary-700 hover:text-primary-500 hover:bg-secondary-50">Projects</a>
+        <a href="#achievements" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-secondary-700 hover:text-primary-500 hover:bg-secondary-50">Achievements</a>
+        <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-secondary-700 hover:text-primary-500 hover:bg-secondary-50">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="about" class="relative pt-32 pb-20 bg-gradient text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+          <div class="md:col-span-7">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Saranya Devi S</h1>
+            <h2 class="text-xl md:text-2xl font-medium mb-6">Data Science & Software Development Specialist</h2>
+            <p class="text-lg leading-relaxed mb-8">
+              Highly adaptable and quick learner with a strong passion for Data Science and Software Development. 
+              Skilled in building scalable applications and applying machine learning to derive meaningful insights and solutions.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a 
+                href="#contact"
+                class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary-600 bg-white hover:bg-primary-50 transition duration-300"
+              >
+                Get In Touch <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+              <a 
+                href="#projects"
+                class="inline-flex items-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-primary-600 transition duration-300"
+              >
+                View My Work
+              </a>
+            </div>
+          </div>
+          <div class="md:col-span-5 flex flex-col items-center">
+            <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-xl mb-6">
+              <div class="w-full h-full bg-primary-600 flex items-center justify-center text-white">
+                <span class="text-5xl font-bold">SD</span>
+              </div>
+            </div>
+            <div class="flex space-x-4">
+              <a href="mailto:saranyadevi974@gmail.com" class="text-white hover:text-secondary-100 transition duration-300">
+                <i class="fas fa-envelope text-2xl"></i>
+              </a>
+              <a href="https://github.com/SaranyaDevi2005" target="_blank" rel="noopener noreferrer" class="text-white hover:text-secondary-100 transition duration-300">
+                <i class="fab fa-github text-2xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/saranya-devi2005/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-secondary-100 transition duration-300">
+                <i class="fab fa-linkedin text-2xl"></i>
+              </a>
+              <a href="tel:6381379974" class="text-white hover:text-secondary-100 transition duration-300">
+                <i class="fas fa-phone text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Wave Separator -->
+      <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-0 transform rotate-180">
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 1200 120" 
+          preserveAspectRatio="none" 
+          class="w-full h-[50px] text-secondary-50 fill-current"
+        >
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-secondary-800">Education</h2>
+          <div class="w-24 h-1 bg-primary-500 mx-auto mt-4"></div>
+        </div>
+        
+        <div class="relative">
+          <!-- Timeline Line -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-primary-100"></div>
+          
+          <!-- Timeline Items -->
+          <div class="space-y-12">
+            <!-- MSc Education -->
+            <div class="relative">
+              <div class="flex items-center justify-center">
+                <div class="z-10 flex items-center justify-center w-12 h-12 bg-primary-500 rounded-full">
+                  <i class="fas fa-graduation-cap text-white"></i>
+                </div>
+              </div>
+              <div class="relative pt-6">
+                <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                    <h3 class="text-xl font-bold text-secondary-800">M.Sc. Decision and Computing Sciences</h3>
+                    <span class="text-primary-600 font-medium">2022 - Present</span>
+                  </div>
+                  <p class="mb-2 font-medium">Coimbatore Institute of Technology (CIT)</p>
+                  <p>CGPA: 8.88 (Till 5th sem)</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 12th Grade Education -->
+            <div class="relative">
+              <div class="flex items-center justify-center">
+                <div class="z-10 flex items-center justify-center w-12 h-12 bg-primary-500 rounded-full">
+                  <i class="fas fa-school text-white"></i>
+                </div>
+              </div>
+              <div class="relative pt-6">
+                <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                    <h3 class="text-xl font-bold text-secondary-800">12th Grade</h3>
+                    <span class="text-primary-600 font-medium">2021 - 2022</span>
+                  </div>
+                  <p class="mb-2 font-medium">St. Joseph Matric Higher Secondary School</p>
+                  <p>Percentage: 87%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-secondary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-secondary-800">Skills & Expertise</h2>
+          <div class="w-24 h-1 bg-primary-500 mx-auto mt-4"></div>
+          <p class="mt-4 text-lg text-secondary-600 max-w-3xl mx-auto">
+            Areas of Interest: Statistical Analysis | Machine Learning | Predictive Analysis | NLP | MySQL | PowerBI | Full Stack Web Development
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Technical Skills -->
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-bold text-secondary-800 mb-6">Technical Skills</h3>
+            
+            <!-- Programming Languages -->
+            <div class="mb-8">
+              <h4 class="text-lg font-semibold text-secondary-700 mb-4">Programming Languages</h4>
+              <div class="space-y-4">
+                <!-- Python -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-1">
+                    <span class="text-sm font-medium text-secondary-700">Python</span>
+                  </div>
+                  <div class="w-full bg-secondary-200 rounded-full h-2">
+                    <div class="bg-primary-500 h-2 rounded-full skill-progress" style="--progress: 95%"></div>
+                  </div>
+                </div>
+                
+                <!-- JavaScript -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-1">
+                    <span class="text-sm font-medium text-secondary-700">JavaScript</span>
+                  </div>
+                  <div class="w-full bg-secondary-200 rounded-full h-2">
+                    <div class="bg-primary-500 h-2 rounded-full skill-progress" style="--progress: 85%"></div>
+                  </div>
+                </div>
+                
+                <!-- R -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-1">
+                    <span class="text-sm font-medium text-secondary-700">R</span>
+                  </div>
+                  <div class="w-full bg-secondary-200 rounded-full h-2">
+                    <div class="bg-primary-500 h-2 rounded-full skill-progress" style="--progress: 80%"></div>
+                  </div>
+                </div>
+                
+                <!-- Java -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-1">
+                    <span class="text-sm font-medium text-secondary-700">Java</span>
+                  </div>
+                  <div class="w-full bg-secondary-200 rounded-full h-2">
+                    <div class="bg-primary-500 h-2 rounded-full skill-progress" style="--progress: 75%"></div>
+                  </div>
+                </div>
+                
+                <!-- C -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-1">
+                    <span class="text-sm font-medium text-secondary-700">C</span>
+                  </div>
+                  <div class="w-full bg-secondary-200 rounded-full h-2">
+                    <div class="bg-primary-500 h-2 rounded-full skill-progress" style="--progress: 80%"></div>
+                  </div>
+                </div>
+                
+                <!-- HTML/CSS -->
+                <div class="skill-item">
+                  <div class="flex justify-between mb-1">
+                    <span class="text-sm font-medium text-secondary-700">HTML/CSS</span>
+                  </div>
+                  <div class="w-full bg-secondary-200 rounded-full h-2">
+                    <div class="bg-primary-500 h-2 rounded-full skill-progress" style="--progress: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Frameworks & Tools -->
+            <div>
+              <h4 class="text-lg font-semibold text-secondary-700 mb-4">Frameworks & Tools</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">React</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">Angular</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">Django</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">Flask</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">Node.js</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">Express.js</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">MySQL</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">Oracle</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">MongoDB</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">Pandas</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">NumPy</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">Scikit-learn</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">Plotly</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">NLTK</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">TextBlob</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">VS Code</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">R Studio</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">MS Excel</span>
+                <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm">Power BI</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Soft Skills & Certifications -->
+          <div class="space-y-8">
+            <!-- Soft Skills -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-bold text-secondary-800 mb-6">Soft Skills</h3>
+              <div class="grid grid-cols-2 gap-4">
+                <!-- Adaptability -->
+                <div class="flex items-center">
+                  <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-sync-alt text-primary-500"></i>
+                  </div>
+                  <span class="ml-3 text-secondary-700">Adaptability</span>
+                </div>
+                
+                <!-- Teamwork -->
+                <div class="flex items-center">
+                  <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-users text-primary-500"></i>
+                  </div>
+                  <span class="ml-3 text-secondary-700">Teamwork</span>
+                </div>
+                
+                <!-- Creativity -->
+                <div class="flex items-center">
+                  <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-lightbulb text-primary-500"></i>
+                  </div>
+                  <span class="ml-3 text-secondary-700">Creativity</span>
+                </div>
+                
+                <!-- Problem Solving -->
+                <div class="flex items-center">
+                  <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-puzzle-piece text-primary-500"></i>
+                  </div>
+                  <span class="ml-3 text-secondary-700">Problem Solving</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Certifications -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-bold text-secondary-800 mb-6">Certifications</h3>
+              <ul class="space-y-3">
+                <!-- Lean Six Sigma -->
+                <li class="flex">
+                  <i class="fas fa-certificate text-primary-500 mt-1 mr-3"></i>
+                  <div>
+                    <p class="font-medium text-secondary-800">Lean Six Sigma Yellow Belt</p>
+                    <p class="text-sm text-secondary-600">Skilled in process improvement and waste reduction</p>
+                  </div>
+                </li>
+                
+                <!-- Data Analysis -->
+                <li class="flex">
+                  <i class="fas fa-certificate text-primary-500 mt-1 mr-3"></i>
+                  <div>
+                    <p class="font-medium text-secondary-800">Maiyyam – Data Analysis</p>
+                    <p class="text-sm text-secondary-600">Power BI and Tableau</p>
+                  </div>
+                </li>
+                
+                <!-- UI/UX -->
+                <li class="flex">
+                  <i class="fas fa-certificate text-primary-500 mt-1 mr-3"></i>
+                  <div>
+                    <p class="font-medium text-secondary-800">Maiyyam – UI/UX</p>
+                    <p class="text-sm text-secondary-600">Experienced in creating user-friendly designs</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-secondary-800">Projects</h2>
+          <div class="w-24 h-1 bg-primary-500 mx-auto mt-4"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- CyberSentinel -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg project-card">
+            <div class="h-48 bg-gradient flex items-center justify-center">
+              <i class="fas fa-shield-alt text-white text-5xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-secondary-800 mb-2">CyberSentinel</h3>
+              <p class="text-sm text-primary-500 font-medium mb-3">Network Security & Anomaly Detection</p>
+              <p class="text-secondary-600 mb-4">
+                Developed a real-time anomaly detection system for network security, achieving 93.27% accuracy using Random Forest, XGBoost, and ensemble techniques with hyperparameter tuning to enhance rare attack detection and reduce false positives. Integrated an alert buzzer system for immediate notifications upon anomaly detection.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-secondary-100 text-secondary-600 rounded text-xs">Machine Learning</span>
+                <span class="px-2 py-1 bg-secondary-100 text-secondary-600 rounded text-xs">Network Security</span>
+                <span class="px-2 py-1 bg-secondary-100 text-secondary-600 rounded text-xs">Python</span>
+                <span class="px-2 py-1 bg-secondary-100 text-secondary-600 rounded text-xs">Random Forest</span>
+                <span class="px-2 py-1 bg-secondary-100 text-secondary-600 rounded text-xs">XGBoost</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- StrokeShield -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg project-card">
+            <div class="h-48 bg-gradient flex items-center justify-center">
+              <i class="fas fa-heartbeat text-white text-5xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-secondary-800 mb-2">StrokeShield</h3>
+              <p class="text-sm text-primary-500 font-medium mb-3">Stroke Prediction Using Machine Learning</p>
+              <p class="text-secondary-600 mb-4">
+                Developed a predictive model for stroke risk assessment using healthcare data. Applied regression techniques, K-Means clustering, factor analysis, and hyperparameter tuning to assess stroke risk. Logistic Regression achieved the highest accuracy of 93.93%, enhancing clinical decision-making.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-secondary-100 text-secondary-600 rounded text-xs">Machine Learning</span>
+                <span class="px-2 py-1 bg-secondary-100 text-secondary-600 rounded text-xs">Healthcare</span>
+                <span class="px-2 py-1 bg-secondary-100 text-secondary-600 rounded text-xs">Python</span>
+                <span class="px-2 py-1 bg-secondary-100 text-secondary-600 rounded text-xs">Logistic Regression</span>
+                <span class="px-2 py-1 bg-secondary-100 text-secondary-600 rounded text-xs">K-Means</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- StayHub -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg project-card">
+            <div class="h-48 bg-gradient flex items-center justify-center">
+              <i class="fas fa-home text-white text-5xl"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-secondary-800 mb-2">StayHub</h3>
+              <p class="text-sm text-primary-500 font-medium mb-3">Airbnb Clone | MERN Stack</p>
+              <p class="text-secondary-600 mb-4">
+                Developed a dynamic rental marketplace enabling homeowners to list properties with images while allowing users to explore, book, and manage stays seamlessly. Designed an intuitive UI with real-time availability updates, secure authentication, and high-performance API integrations.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2 py-1 bg-secondary-100 text-secondary-600 rounded text-xs">React</span>
+                <span class="px-2 py-1 bg-secondary-100 text-secondary-600 rounded text-xs">MongoDB</span>
+                <span class="px-2 py-1 bg-secondary-100 text-secondary-600 rounded text-xs">Express</span>
+                <span class="px-2 py-1 bg-secondary-100 text-secondary-600 rounded text-xs">Node.js</span>
+                <span class="px-2 py-1 bg-secondary-100 text-secondary-600 rounded text-xs">RESTful API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20 bg-secondary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-secondary-800">Achievements</h2>
+          <div class="w-24 h-1 bg-primary-500 mx-auto mt-4"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Hackathons -->
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                <i class="fas fa-trophy text-2xl text-primary-500"></i>
+              </div>
+              <h3 class="text-xl font-bold text-secondary-800">Hackathons</h3>
+            </div>
+            <ul class="space-y-4">
+              <li class="flex">
+                <i class="fas fa-medal text-yellow-500 mt-1 mr-3"></i>
+                <div>
+                  <p class="font-medium text-secondary-800">First Place in Smart India Hackathon 2024, CIT</p>
+                </div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-award text-primary-500 mt-1 mr-3"></i>
+                <div>
+                  <p class="font-medium text-secondary-800">Execute 4.0 - DTU 2025 Finalist</p>
+                </div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-award text-primary-500 mt-1 mr-3"></i>
+                <div>
+                  <p class="font-medium text-secondary-800">0 to 1 Hackathon - IIITD Finalist</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Paper Presentation -->
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                <i class="fas fa-file-alt text-2xl text-primary-500"></i>
+              </div>
+              <h3 class="text-xl font-bold text-secondary-800">Paper Presentation</h3>
+            </div>
+            <div class="pl-6 border-l-2 border-primary-200">
+              <h4 class="font-medium text-secondary-800">International Conference on Computational Intelligence and Communication Technologies</h4>
+              <p class="text-secondary-600 my-2">
+                Presented a research paper titled "Real-time Anomaly Detection in Network Security using Machine Learning"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-secondary-800">Get In Touch</h2>
+          <div class="w-24 h-1 bg-primary-500 mx-auto mt-4"></div>
+          <p class="mt-4 text-lg text-secondary-600 max-w-3xl mx-auto">
+            Feel free to reach out to me for collaboration opportunities, questions, or just to say hello!
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Contact Info -->
+          <div>
+            <div class="mb-8">
+              <h3 class="text-xl font-bold text-secondary-800 mb-4">Contact Information</h3>
+              <div class="space-y-4">
+                <!-- Email -->
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                    <i class="fas fa-envelope text-primary-500"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-secondary-500">Email</p>
+                    <a href="mailto:saranyadevi974@gmail.com" target="_blank" rel="noopener noreferrer" class="text-secondary-800 hover:text-primary-500 transition duration-300">
+                      saranyadevi974@gmail.com
+                    </a>
+                  </div>
+                </div>
+                
+                <!-- Phone -->
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                    <i class="fas fa-phone text-primary-500"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-secondary-500">Phone</p>
+                    <a href="tel:6381379974" class="text-secondary-800 hover:text-primary-500 transition duration-300">
+                      +91 6381379974
+                    </a>
+                  </div>
+                </div>
+                
+                <!-- LinkedIn -->
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                    <i class="fab fa-linkedin text-primary-500"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-secondary-500">LinkedIn</p>
+                    <a href="https://www.linkedin.com/in/saranya-devi2005/" target="_blank" rel="noopener noreferrer" class="text-secondary-800 hover:text-primary-500 transition duration-300">
+                      linkedin.com/in/saranya-devi2005
+                    </a>
+                  </div>
+                </div>
+                
+                <!-- GitHub -->
+                <div class="flex items-start">
+                  <div class="flex-shrink-0 w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                    <i class="fab fa-github text-primary-500"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm text-secondary-500">GitHub</p>
+                    <a href="https://github.com/SaranyaDevi2005" target="_blank" rel="noopener noreferrer" class="text-secondary-800 hover:text-primary-500 transition duration-300">
+                      github.com/SaranyaDevi2005
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <a 
+                href="SARANYA_DEVI_S_RESUME.pdf" 
+                class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-500 hover:bg-primary-600 transition duration-300"
+              >
+                <i class="fas fa-download mr-2"></i> Download Resume
+              </a>
+            </div>
+          </div>
+          
+          <!-- Contact Form -->
+          <div class="bg-secondary-50 p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold text-secondary-800 mb-4">Send Me a Message</h3>
+            <form id="contact-form">
+              <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-secondary-700 mb-1">Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  class="w-full px-4 py-2 border border-secondary-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500" 
+                  required 
+                />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-secondary-700 mb-1">Email</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  class="w-full px-4 py-2 border border-secondary-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500" 
+                  required 
+                />
+              </div>
+              <div class="mb-4">
+                <label for="subject" class="block text-sm font-medium text-secondary-700 mb-1">Subject</label>
+                <input 
+                  type="text" 
+                  id="subject" 
+                  name="subject" 
+                  class="w-full px-4 py-2 border border-secondary-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500" 
+                  required 
+                />
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block text-sm font-medium text-secondary-700 mb-1">Message</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="4" 
+                  class="w-full px-4 py-2 border border-secondary-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500" 
+                  required
+                ></textarea>
+              </div>
+              <button 
+                type="submit" 
+                class="w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-500 hover:bg-primary-600 transition duration-300"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-secondary-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <h2 class="text-2xl font-bold">Saranya Devi S</h2>
+          <p class="text-secondary-400">Data Science & Software Development</p>
+        </div>
+        <div class="flex space-x-4">
+          <a href="mailto:saranyadevi974@gmail.com" class="text-secondary-300 hover:text-white transition duration-300">
+            <i class="fas fa-envelope text-xl"></i>
+          </a>
+          <a href="https://github.com/SaranyaDevi2005" target="_blank" rel="noopener noreferrer" class="text-secondary-300 hover:text-white transition duration-300">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/saranya-devi2005/" target="_blank" rel="noopener noreferrer" class="text-secondary-300 hover:text-white transition duration-300">
+            <i class="fab fa-linkedin text-xl"></i>
+          </a>
+          <a href="tel:6381379974" class="text-secondary-300 hover:text-white transition duration-300">
+            <i class="fas fa-phone text-xl"></i>
+          </a>
+        </div>
+      </div>
+      <div class="mt-4 pt-4 border-t border-secondary-700 text-center text-secondary-400">
+        <p>&copy; <span id="year"></span> Saranya Devi S. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

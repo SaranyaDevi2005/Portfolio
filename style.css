@@ -1,0 +1,38 @@
+/* Optional custom CSS, though most styling is handled by Tailwind classes directly in HTML */
+
+/* Animation for skill bars */
+@keyframes skillProgress {
+  from { width: 0; }
+  to { width: var(--progress); }
+}
+
+.skill-progress {
+  animation: skillProgress 1.5s ease-out forwards;
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%);
+}
+
+/* Smooth transitions */
+.transition {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Focus effects */
+input:focus, textarea:focus {
+  outline: none;
+  --tw-ring-color: rgba(14, 165, 233, 0.5);
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  border-color: #0ea5e9;
+}
+
+/* Add some hover effects to project cards */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
